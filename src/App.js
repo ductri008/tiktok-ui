@@ -18,6 +18,9 @@ function App() {
           GITHUB CUA DUCTRI008
         </a>
         <button>TEST BUTTON</button>
+        <button>TEST BUTTON2</button>
+        <button>TEST BUTTON3</button>
+        <button>TEST BUTTON4</button>
       </header>
     </div>
   );
