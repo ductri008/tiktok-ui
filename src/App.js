@@ -2,7 +2,7 @@ function App() {
     return (
         <div className="App">
             <header className="App-header">
-                <h1> REACT APP</h1>
+                <h1> TikTok App</h1>
             </header>
         </div>
     );

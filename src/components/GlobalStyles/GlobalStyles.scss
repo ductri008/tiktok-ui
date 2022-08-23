@@ -1,0 +1,21 @@
+@import 'normalize.css';
+@import url('https://use.typekit.net/llu6kbq.css');
+
+:root {
+    --primary-color: rgba(254, 44, 85, 1);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'IBM Plex Sans', SofiaPro, Arial, Tahoma, PingFangSC, sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5rem;
+    text-rendering: optimizeSpeed;
+}
