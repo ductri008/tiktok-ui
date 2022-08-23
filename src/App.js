@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          GITHUB CUA DUCTRI008
         </a>
       </header>
     </div>
