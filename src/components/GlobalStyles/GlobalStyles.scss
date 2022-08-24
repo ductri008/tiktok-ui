@@ -3,6 +3,11 @@
 
 :root {
     --primary-color: rgba(254, 44, 85, 1);
+
+    // Default layout
+
+    --defaultlayout-header-height: 60px;
+    --defaultlayout-width: 1150px;
 }
 
 html {
@@ -11,6 +16,8 @@ html {
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {

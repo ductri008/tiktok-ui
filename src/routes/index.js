@@ -1,12 +1,11 @@
 import Home from '~/pages/Home';
 import Following from '~/pages/Following';
 import Profile from '~/pages/Profile';
-import Upload from '~/pages/Upload';
 import Search from '~/pages/Search';
+import Upload from '~/pages/Upload';
 
-import { HeaderOnly } from '~/components/Layout';
+import HeaderOnly from '~/components/Layout/HeaderOnly';
 
-// Public routes : user khong login van xem duoc
 const publicRoutes = [
     { path: '/', component: Home },
     { path: '/following', component: Following },
