@@ -14,6 +14,11 @@
     justify-content: space-between;
 }
 
+.search,
+.search-results {
+    width: 361px;
+}
+
 .search {
     width: 361px;
     height: 46px;
@@ -36,6 +41,7 @@
         width: 252px;
         font-family: ProximaNova, Arial, Tahoma, PingFangSC, sans-serif;
         caret-color: var(--primary-color);
+        position: relative;
     }
 
     &::before {
@@ -55,6 +61,16 @@
 
 input:not(:placeholder-shown) ~ .search-button {
     color: black;
+}
+
+.search-title {
+    height: 30px;
+    padding: 5px 12px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+    color: rgba(22, 24, 35, 0.5);
+    font-family: ProximaNova, Arial, Tahoma, PingFangSC, sans-serif;
 }
 
 .clear,
