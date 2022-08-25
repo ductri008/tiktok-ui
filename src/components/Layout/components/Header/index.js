@@ -8,6 +8,7 @@ import styles from './Header.module.scss';
 import images from '~/assests/images';
 import { Wrapper as PopperWrapper } from '~/components/Popper';
 import AccountItem from '~/AccountItem';
+import Button from '~/components/Button';
 
 const cx = classNames.bind(styles);
 function Header() {
@@ -51,12 +52,17 @@ function Header() {
                         <FontAwesomeIcon className={cx('loading')} icon={faSpinner} />
 
                         <button className={cx('search-button')}>
-                            <FontAwesomeIcon icon={faMagnifyingGlass} />{' '}
+                            <FontAwesomeIcon icon={faMagnifyingGlass} />
                         </button>
                     </div>
                 </Tippy>
 
-                <div className={cx('actions')}></div>
+                <div className={cx('actions')}>
+                    <Button text>Upload</Button>
+                    <Button primary leftIcon={<FontAwesomeIcon icon={faMagnifyingGlass} />}>
+                        Log in
+                    </Button>
+                </div>
             </div>
         </header>
     );
