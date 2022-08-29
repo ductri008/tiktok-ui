@@ -56,7 +56,7 @@ function Header() {
 
                 <Tippy
                     interactive
-                    placement="bottom-end"
+                    placement="bottom-start"
                     visible={searchResult.length > 0}
                     render={(attrs) => (
                         <div className={cx('search-results')} tabIndex="-1" {...attrs}>
