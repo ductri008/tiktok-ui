@@ -12,6 +12,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0px var(--defaultlayout-horizontal-spacer);
 }
 
 .search,
@@ -118,8 +119,13 @@ input:not(:placeholder-shown) ~ .search-button {
     outline: none;
     background-color: transparent;
     padding: 4px 8px;
+    cursor: pointer;
 }
 
 .menu-items {
     width: 224px;
+}
+
+.tippy-position {
+    transform: translate(446px, 63px);
 }
