@@ -22,10 +22,23 @@ import Menu from '~/components/Popper/Menu';
 
 const cx = classNames.bind(styles);
 
+const handleMenuChange = (item) => {
+    console.log(item);
+};
+
+const defaultFn = () => {};
+
 const MENU_ITEM = [
     {
         icon: <FontAwesomeIcon icon={faEarthAsia} />,
         title: 'English',
+        children: {
+            title: 'Language',
+            data: [
+                { code: 'en', title: 'English' },
+                { code: 'vi', title: 'Tiếng Việt' },
+            ],
+        },
     },
     {
         icon: <FontAwesomeIcon icon={faCircleQuestion} />,
@@ -55,6 +68,7 @@ function Header() {
                 </div>
 
                 <Tippy
+                    className={cx('tippy-position')}
                     interactive
                     placement="bottom-start"
                     visible={searchResult.length > 0}
@@ -91,7 +105,7 @@ function Header() {
                         Log in
                     </Button>
 
-                    <Menu items={MENU_ITEM}>
+                    <Menu items={MENU_ITEM} onChange={handleMenuChange}>
                         <button className={cx('more-btn')}>
                             <FontAwesomeIcon icon={faEllipsisVertical} />
                         </button>
